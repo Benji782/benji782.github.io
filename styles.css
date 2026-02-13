@@ -1,0 +1,18 @@
+.container{
+    display:flex;
+    justify-content: space-between;
+    background-color:aqua;
+    height:1000px;
+}
+.workContainer{
+    display:flex;
+    background-color:purple;
+    width:80vw;
+}
+
+.workContainer div{
+    height:300px;
+    width:200px;
+    margin:10px;
+    background-color: beige;
+}
