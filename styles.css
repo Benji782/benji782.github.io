@@ -1,18 +1,101 @@
+:root{
+    background-color: #223459;
+}
+
+.subNav{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin:1rem;
+    background-color: #223459;
+}
 .container{
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
-    background-color:aqua;
     height:1000px;
 }
 .workContainer{
     display:flex;
-    background-color:purple;
+    background-color:#152c40;
     width:80vw;
 }
+.buttons{
+    font-size: 2rem;
+    margin:2rem
+}
 
-.workContainer div{
+
+
+a{
+    text-decoration: none;
+}
+
+/*links*/
+a:visited{
+    color:#556c7a;
+}
+a:hover{
+    color:#a0bed9
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    color: #a0bed9;
+}
+
+/*when cards are made to show work*/
+.workContainer div{ 
     height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width:200px;
     margin:10px;
-    background-color: beige;
+    background-color: #09151f;
+    padding: 10px;
+    color:#a0bed9;
+    border-radius: 10%;
+}
+
+.mainContainer{
+    margin: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav a{
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/*Pop-Up*/
+.overlay{
+    position: fixed;
+    inset: 0;
+}
+.popUp{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: #09151f;
+    color:#a0bed9;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+}
+.popUp img{
+    height:25vh;
+    object-fit: contain;
+}
+.hidden{
+    display: none;
 }
