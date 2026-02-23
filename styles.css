@@ -1,32 +1,62 @@
-:root{
-    background-color: #223459;
+*{
+      margin:0;
+    padding:0;  
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #050930;
+    font-family:
+    Georgia, serif;
 }
 
+canvas{
+    position:fixed;
+    inset:0;
+    display:block;
+}
+
+
+
+
+
 .subNav{
+    position: relative; z-index: 10;
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
     margin:1rem;
-    background-color: #223459;
+    color:#a0bed9
 }
 .container{
+    position: relative; z-index: 10;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    height:1000px;
+
 }
 .workContainer{
     display:flex;
-    background-color:#152c40;
+    align-items: flex-start;
+    background-color:rgba(0, 0, 0, 0.616);
+    height: auto;
     width:80vw;
 }
 .buttons{
     font-size: 2rem;
     margin:2rem
+    
 }
-
-
+.buttons > ul{
+    margin:5vh 0;
+    padding: 1rem;
+    border-radius: 5%;
+}
+.buttons > ul:hover{
+    background-color: rgb(23, 20, 41);
+}
 
 a{
     text-decoration: none;
@@ -48,24 +78,30 @@ h1{
 
 /*when cards are made to show work*/
 .workContainer div{ 
-    height:300px;
-    display: flex;
+    
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
-    width:200px;
     margin:10px;
-    background-color: #09151f;
-    padding: 10px;
+    background-color: #0f2435;
+    padding: 1vw;
     color:#a0bed9;
+    border-radius: 10%;
+}
+.workContainer img{
+    object-fit: contain;
+    width: 20vw;
     border-radius: 10%;
 }
 
 .mainContainer{
-    margin: 30vh;
+    position: relative; z-index: 10;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; color: rgba(255,255,255,0.85);
+    text-align: center; gap: 0.75rem;
 }
 
 .nav a{
@@ -90,12 +126,25 @@ h1{
     display: flex;
     flex-direction: column;
     position: fixed;
+    margin: 1rem;
     z-index: 1000;
+    border-radius: 3%;
+}
+.popUp h2{
+    margin: 2vh 0;
+
 }
 .popUp img{
-    height:25vh;
+    height:45vh;
     object-fit: contain;
+}
+.popUp a{
+    margin:1vh 0;
 }
 .hidden{
     display: none;
+}
+
+.buttons{
+    font-size: 3rem;;
 }
